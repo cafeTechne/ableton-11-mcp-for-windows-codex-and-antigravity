@@ -1,4 +1,7 @@
 
+# Note name to MIDI offset lookup
+NOTE_NAMES = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
+
 # Musical Scales
 SCALES = {
     "major": [0, 2, 4, 5, 7, 9, 11],

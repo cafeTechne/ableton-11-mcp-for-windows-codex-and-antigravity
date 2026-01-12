@@ -173,3 +173,59 @@ def voice_lead_progression(progression_notes: list) -> list:
     
     return result
 
+
+def get_scale_degree(note_midi: int, root_midi: int, scale_name: str = "major") -> int:
+    """
+    Determine the scale degree of a note (1-based).
+    Returns 0 if not in scale.
+    """
+    # Normalize to 0-11 relative to root
+    rel_semitone = (note_midi - root_midi) % 12
+    scale = SCALES.get(scale_name, SCALES["major"])
+    
+    if rel_semitone in scale:
+        return scale.index(rel_semitone) + 1
+    return 0
+
+def get_guide_tones(chord_notes: list) -> list:
+    """
+    Extract the 3rd and 7th of a chord.
+    Assumes chord_notes are sorted [Root, 3rd, 5th, 7th...].
+    Simple heuristic: index 1 is 3rd, index 3 is 7th usually.
+    """
+    guides = []
+    if len(chord_notes) > 1:
+        guides.append(chord_notes[1]) # 3rd
+    if len(chord_notes) > 3:
+        guides.append(chord_notes[3]) # 7th
+    return guides
+
+def get_nearest_chord_tone(target_pitch: int, chord_notes: list) -> int:
+    """
+    Find the note in chord_notes closest to target_pitch.
+    Auto-octaves the chord notes to find the best match.
+    """
+    best_note = chord_notes[0]
+    best_dist = float('inf')
+    
+    # Check all chord tones in extended range (-1 to +1 octave relative to target)
+    for base_note in chord_notes:
+        # Normalize to 0-11
+        base_pc = base_note % 12
+        # Find octave closest to target
+        target_octave = (target_pitch // 12) * 12
+        candidates = [
+            base_pc + target_octave - 12,
+            base_pc + target_octave,
+            base_pc + target_octave + 12
+        ]
+        
+        for cand in candidates:
+            dist = abs(cand - target_pitch)
+            if dist < best_dist:
+                best_dist = dist
+                best_note = cand
+                
+    return best_note
+
+

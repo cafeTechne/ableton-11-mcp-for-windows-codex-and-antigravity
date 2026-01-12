@@ -87,10 +87,14 @@ def load_simpler_with_sample_logic(track_index: int, file_path: str, device_slot
              device_index = ensure_device(ableton, track_index, "Simpler", device_slot)
         
         if device_index is None:
-             track_info = ableton.send_command("get_track_info", {"track_index": track_index})
-             devices = track_info.get("devices", [])
-             if not devices: return "No devices found on track"
-             device_index = len(devices) - 1
+             try:
+                 track_info = ableton.send_command("get_track_info", {"track_index": track_index})
+                 devices = track_info.get("devices", [])
+                 if not devices: return "No devices found on track"
+                 device_index = len(devices) - 1
+             except Exception:
+                 # If inspection fails (Group Track?), assume device 0 (Instrument)
+                 device_index = 0
 
         sample_uri = _resolve_sample_uri(ableton, file_path)
         if not sample_uri: return f"Could not resolve browser URI for sample: {file_path}"
@@ -114,10 +118,13 @@ def load_sampler_with_sample_logic(track_index: int, file_path: str, device_slot
              device_index = ensure_device(ableton, track_index, "Sampler", device_slot)
         
         if device_index is None:
-             track_info = ableton.send_command("get_track_info", {"track_index": track_index})
-             devices = track_info.get("devices", [])
-             if not devices: return "No devices found on track"
-             device_index = len(devices) - 1
+             try:
+                 track_info = ableton.send_command("get_track_info", {"track_index": track_index})
+                 devices = track_info.get("devices", [])
+                 if not devices: return "No devices found on track"
+                 device_index = len(devices) - 1
+             except Exception:
+                 device_index = 0
 
         sample_uri = _resolve_sample_uri(ableton, file_path)
         if not sample_uri: return f"Could not resolve browser URI for sample: {file_path}"

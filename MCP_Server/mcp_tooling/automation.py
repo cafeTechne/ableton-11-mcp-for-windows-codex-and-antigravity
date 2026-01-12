@@ -75,6 +75,60 @@ def generate_cc_envelope(
     return points
 
 
+def generate_float_envelope(
+    length_beats: float,
+    curve_type: str = "linear",
+    start_value: float = 0.0,
+    end_value: float = 1.0,
+    resolution: float = 0.125
+) -> List[Tuple[float, float]]:
+    """
+    Generate a list of (time, value) points for a parameter automation envelope (floats).
+    Similar to generate_cc_envelope but preserves float precision for normalized params.
+    """
+    points = []
+    num_points = max(2, int(length_beats / resolution))
+    
+    for i in range(num_points + 1):
+        t = (i / num_points) * length_beats
+        pct = i / num_points  # 0.0 to 1.0
+        
+        if curve_type == "swell":
+            val = math.sin(pct * math.pi)
+        elif curve_type == "fade_in":
+            val = pct
+        elif curve_type == "fade_out":
+            val = 1.0 - pct
+        elif curve_type == "constant":
+            val = 1.0
+        elif curve_type == "linear":
+            val = pct
+        elif curve_type == "exponential_in":
+            val = pct ** 2
+        elif curve_type == "exponential_out":
+            val = 1.0 - ((1.0 - pct) ** 2)
+        elif curve_type == "attack_release":
+            # Simple attack/release
+            # Assume 30% attack, 20% release
+            attack_end = 0.3
+            release_start = 0.8
+            if pct < attack_end:
+                val = pct / attack_end
+            elif pct > release_start:
+                val = 1.0 - ((pct - release_start) / 0.2)
+            else:
+                val = 1.0
+        else:
+            val = pct
+        
+        # Map to value range (Floats)
+        mapped_val = start_value + (end_value - start_value) * val
+        points.append((round(t, 4), mapped_val))
+    
+    return points
+
+
+
 def apply_cc_automation(
     track_index: int,
     clip_index: int,
@@ -113,8 +167,13 @@ def apply_cc_automation(
         }
         
         # Get track info to find devices
-        t_data = ableton.send_command("get_track_info", {"track_index": track_index})
-        devices = t_data.get("devices", [])
+        try:
+            t_data = ableton.send_command("get_track_info", {"track_index": track_index})
+            devices = t_data.get("devices", [])
+        except Exception as e:
+            if "Arm" in str(e):
+                return f"Cannot inspect devices on Track {track_index} (Group Track limitation). Automation requires visible devices."
+            raise e
         
         if not devices:
             return f"No devices found on track {track_index}. Add an instrument first."
@@ -197,8 +256,13 @@ def apply_automation_logic(track_index: int, clip_index: int, parameter_name: st
         ]
         
         # 1. Inspect Track Devices
-        t_data = ableton.send_command("get_track_info", {"track_index": track_index})
-        devices = t_data.get("devices", [])
+        try:
+            t_data = ableton.send_command("get_track_info", {"track_index": track_index})
+            devices = t_data.get("devices", [])
+        except Exception as e:
+            if "Arm" in str(e):
+                return f"Cannot inspect devices on Track {track_index} (Group Track limitation). Automation requires visible devices."
+            raise e
         target_device_idx = -1
         
         # Heuristic: Find first device with parameter 'parameter_name'

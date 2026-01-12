@@ -8,3 +8,11 @@ from .drummer import (
     generate_drum_fill,
     generate_drum_section,
 )
+
+from .transitions import (
+    apply_parameter_ramp,
+    configure_clip_launch,
+    insert_transition_scene,
+    generate_micro_fill,
+    apply_reverb_throw,
+)

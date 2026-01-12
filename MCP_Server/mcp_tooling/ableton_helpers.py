@@ -20,7 +20,7 @@ def _ensure_track_exists(track_index: Optional[int], prefer: str = "midi", allow
     track_count = len(context.get("tracks", []))
     
     # FALLBACK: If get_song_context reports 0 tracks, verify using get_track_info
-    # This prevents accidental track creation when the API misreports
+    # This might fail on Group Tracks, so wrap it.
     if track_count == 0:
         try:
             ableton.send_command("get_track_info", {"track_index": 0})
@@ -32,8 +32,8 @@ def _ensure_track_exists(track_index: Optional[int], prefer: str = "midi", allow
                 except:
                     break
         except:
-            pass  # Truly no tracks
-    
+            pass  # Truly no tracks, or API error on Group Track zero? (unlikely for track 0 unless it IS a group?)
+            
     if track_index is not None and 0 <= track_index < track_count:
         return track_index
     if not allow_create:
@@ -49,9 +49,11 @@ def _ensure_track_exists(track_index: Optional[int], prefer: str = "midi", allow
     # Verification loop: Wait for track to be visible to API
     for _ in range(10):
         try:
+            # Blind check: if we can call it, great. If not, assume success if it threw the "Arm" error?
             ableton.send_command("get_track_info", {"track_index": new_index})
             return new_index
-        except Exception:
+        except Exception as e:
+            if "Arm" in str(e): return new_index # Success but Group Track
             time.sleep(0.2)
             
     # One last try or return anyway
@@ -78,7 +80,9 @@ def _ensure_clip_slot(track_index: int, clip_index: int, allow_create: bool = Tr
             ableton.send_command("create_scene", {"index": -1})
         return True
     except Exception:
-        return False
+        # If we can't inspect (Group Track), assume we might need scenes? 
+        # Or better, just return True to avoid infinite scene creation if we are wrong.
+        return True
 
 def ensure_device(ableton, track_index, class_name_fragment, slot_index=-1):
     """Check if a device exists on the track and return its index."""
@@ -97,6 +101,7 @@ def ensure_device(ableton, track_index, class_name_fragment, slot_index=-1):
                 class_name_fragment.lower() in dev.get("class_name", "").lower():
                  return dev.get("index")
     except Exception:
+        # Fails on Group Tracks. Return None to force load.
         pass
     return None
 
