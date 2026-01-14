@@ -29,10 +29,23 @@ def robust_infer_chord(notes: list, root_key_midi: int, scale_name: str = "mixol
     
     unique_pcs = set([n['pitch'] % 12 for n in notes])
     
-    # Generate candidates dynamically based on Scale
-    candidates = {}
-    numerals = ["I", "ii", "iii", "IV", "V", "vi", "vii"] # Generic mapping
+    # Mode-specific Roman Numerals
+    # 0-indexed scale degrees
+    numerals_map = {
+        "major":      ["I", "ii", "iii", "IV", "V", "vi", "vii°"],
+        "minor":      ["i", "ii°", "III", "iv", "v", "VI", "VII"], # Natural Minor
+        "aeolian":    ["i", "ii°", "III", "iv", "v", "VI", "VII"],
+        "dorian":     ["i", "ii", "III", "IV", "v", "vi°", "VII"],
+        "phrygian":   ["i", "II", "III", "iv", "v°", "VI", "vii"],
+        "mixolydian": ["I", "ii", "iii°", "IV", "v", "vi", "bVII"],
+        "lydian":     ["I", "II", "iii", "#iv°", "V", "vi", "vii"],
+        "locrian":    ["i°", "bII", "iii", "iv", "V", "VI", "vii"],
+    }
     
+    scale_key = scale_name.lower()
+    numerals = numerals_map.get(scale_key, numerals_map["major"])
+    
+    candidates = {}
     for degree in range(7):
         # Get triad pitch classes
         triad_tones = get_chord_tones_from_scale(root_key_midi, scale_name, degree)
@@ -41,27 +54,27 @@ def robust_infer_chord(notes: list, root_key_midi: int, scale_name: str = "mixol
         candidates[label] = triad_pcs
 
     best_fit = "?"
-    max_overlap = 0
-    min_extra = 99
+    max_score = -1.0
     
     for name, chord_pcs in candidates.items():
         overlap = len(unique_pcs.intersection(chord_pcs))
         extra = len(unique_pcs - chord_pcs)
+        missing = len(chord_pcs - unique_pcs)
         
-        # Score: Maximize overlap, minimize non-chord tones
-        if overlap > max_overlap:
-            max_overlap = overlap
-            min_extra = extra
+        # Scoring: 
+        # +1.0 per overlap
+        # -0.5 per extra note (non-chord tone)
+        # -0.1 per missing note (allow partials)
+        score = (overlap * 1.0) - (extra * 0.5) - (missing * 0.1)
+        
+        if score > max_score:
+            max_score = score
             best_fit = name
-        elif overlap == max_overlap:
-            if extra < min_extra:
-                min_extra = extra
-                best_fit = name
                 
     return best_fit
 
 
-def generate_melody(mood="allegro", chiptune=False, key="F#", scale="mixolydian", seed=None, variance=0.5, motif=None, bars=None):
+def generate_melody(mood="allegro", chiptune=False, key="F#", scale="mixolydian", seed=None, variance=0.5, motif=None, bars=None, chord_track_index=None, chord_track_name=None):
     """
     Generate a single melody track named after the mood.
     
@@ -77,6 +90,35 @@ def generate_melody(mood="allegro", chiptune=False, key="F#", scale="mixolydian"
     """
     conn = get_ableton_connection()
     CHORD_TRACK_IDX = 0
+    
+    # Resolve Chord Track
+    if chord_track_index is not None:
+        CHORD_TRACK_IDX = chord_track_index
+    elif chord_track_name:
+        # Search by name (Fuzzy, case-insensitive)
+        print(f"Searching for chord track '{chord_track_name}'...")
+        try:
+            ctx = conn.send_command("get_song_context", {"include_clips": False})
+            found = False
+            tracks = ctx.get("tracks", [])
+            for tr in tracks:
+                name = tr["name"].strip()
+                search = chord_track_name.strip()
+                if search.lower() == name.lower() or search.lower() in name.lower():
+                    CHORD_TRACK_IDX = tr["index"]
+                    print(f"Found '{name}' (Index {CHORD_TRACK_IDX}) matching '{search}'")
+                    found = True
+                    break
+            
+            if not found:
+                print(f"Error: Chord track '{chord_track_name}' not found!")
+                print("Available tracks:")
+                for tr in tracks: print(f"  {tr['index']}: {tr['name']}")
+                sys.exit(1)
+        except Exception as e:
+            print(f"Error finding track: {e}")
+            sys.exit(1)
+            
     # Resolve Key/Scale from args
     from mcp_tooling.melody import key_to_midi
     KEY_ROOT = key_to_midi(key, 4)
@@ -300,9 +342,11 @@ if __name__ == "__main__":
         parser.add_argument("--variance", type=float, default=0.5, help="Humanization variance (0.0-1.0)")
         parser.add_argument("--motif", help="Force specific motif (e.g. arpeggio_up)")
         parser.add_argument("--bars", type=int, help="Target length in bars (loops chords)")
+        parser.add_argument("--chord-track-index", type=int, help="Index of track containing chords")
+        parser.add_argument("--chord-track-name", help="Name of track containing chords")
         
         args = parser.parse_args()
-        generate_melody(args.mood, args.chiptune, args.key, args.scale, args.seed, args.variance, args.motif, args.bars)
+        generate_melody(args.mood, args.chiptune, args.key, args.scale, args.seed, args.variance, args.motif, args.bars, args.chord_track_index, args.chord_track_name)
     else:
         # No args -> Interactive Mode
         try:

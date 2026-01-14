@@ -6,6 +6,15 @@ description: How to create and manage tracks safely
 
 Tracks can change between prompts. **Always verify before operations.**
 
+> [!CAUTION]
+> **NEVER DELETE TRACKS UNLESS EXPLICITLY ASKED.**
+> This project uses an **Ableton Template** where tracks come pre-loaded with specific devices, instruments, and sound designs (e.g., "1bs_phasesynth_x64", "Magical8bitPlug2").
+> 
+> **Deleting a track destroys this sound design.**
+> 
+> If you encounter a track type mismatch (e.g., expecting MIDI but finding Audio/Group), **STOP** and ask the user or try to work around it generally. DO NOT assume you can delete and recreate it.
+
+
 ## Get All Tracks
 
 ```python
@@ -59,6 +68,11 @@ track_idx = ensure_track_exists(None, prefer="midi", allow_create=True)
 ```
 
 ## Delete Tracks (Use Caution)
+
+> [!CRITICAL]
+> **DO NOT DELETE TRACKS TO "FIX" THEM.**
+> If a track has a different type than expected, it is likely a template decision. Deleting it erases the user's sound design.
+> **Only use this command if the user has explicitly requested to remove a track.**
 
 ```python
 # Verify before deleting

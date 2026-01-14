@@ -147,6 +147,7 @@ Detailed patterns in `.agent/workflows/`:
 | Browser Nav | `/browser-navigation` | Deep search, Filtering, Previews |
 | Creative | `/creative-sound-design` | Unlinked envelopes, Sample scrambling |
 | Orchestration | `/orchestration` | Strings, brass, woodwinds |
+| Custom Progressions | `/custom-progressions` | Generate music from bar charts (e.g. \| i \| IV \|) |
 | Apply Melody | `/apply-melody` | Mood-driven melodies from chords |
 | VST Support | `/vst-support` | How to use VST/AU plugins |
 | Application Views | `/application-view` | Zoom, Scroll, Focus control |

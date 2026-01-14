@@ -45,13 +45,24 @@ python -m mcp_tooling.apply_melody_with_motifs sostenuto
 # Each creates a track named after the mood for easy A/B comparison
 ```
 
+### Analyze Existing Tracks
+
+You can analyze the MIDI from any instrument track (e.g., generated keys/piano) to infer the progression and generate a melody.
+
+```bash
+# Analyze a specific track by name
+python -m mcp_tooling.apply_melody_with_motifs giocoso --chord-track-name "Ska Keys Final" --key Ab --scale aeolian
+```
+
 ## How It Works
 
-1. **Chord Analysis**: Reads chord clips from the source track (default: index 2)
-2. **Roman Numeral Inference**: Maps chord notes to Mixolydian diatonic chords (I, ii, iii, IV, v, vi, VII)
-3. **Mood Profile Application**: Uses density, leap chance, rest probability, velocity range from the mood profile
-4. **Melody Generation**: Generates diatonically-correct pitches via `generate_melody_from_progression()`
-5. **Track Creation**: Creates/updates a track named after the mood
+1. **Chord Analysis**:
+   - Default: Reads clips from Track 0/2 ("Chords").
+   - **New**: Can read from any track via `--chord-track-name` or `--chord-track-index`.
+   - Infers chords from polyphonic MIDI or arpeggios (`robust_infer_chord`).
+2. **Roman Numeral Inference**: Maps notes to the specified Key/Scale.
+3. **Melody Generation**: Generates diatonically-correct pitches.
+4. **Track Creation**: Creates a new track (e.g., `allegro`) with the result.
 
 ## Mood Profile Parameters
 

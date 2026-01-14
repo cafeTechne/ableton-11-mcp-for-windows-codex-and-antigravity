@@ -14,6 +14,8 @@ def ensure_track_exists(track_index: Optional[int], prefer: str = "midi", allow_
 # Internal impl to match captured code style
 def _ensure_track_exists(track_index: Optional[int], prefer: str = "midi", allow_create: bool = True) -> int:
     import time
+    from .safe_mode import Target, SafetyError
+    
     ableton = get_ableton_connection()
     # Use get_song_context instead of deprecated get_session_info
     context = ableton.send_command("get_song_context", {"include_clips": False})
@@ -32,13 +34,28 @@ def _ensure_track_exists(track_index: Optional[int], prefer: str = "midi", allow
                 except:
                     break
         except:
-            pass  # Truly no tracks, or API error on Group Track zero? (unlikely for track 0 unless it IS a group?)
+            pass  # Truly no tracks
             
+    # Check if index is within current bounds
     if track_index is not None and 0 <= track_index < track_count:
+        # SAFETY CHECK: If we are returning an existing index, we must ensure it's safe to use 
+        # if the caller intended to potentially overwrite or use it as a scratchpad.
+        # However, ensure_track_exists is often just "get me handle".
+        # We will assume if it exists, we just return it. 
+        # The CALLER is responsible for checking allow_creation() if they plan to clear it.
+        # BUT, if they passed a specific index that MIGHT match a template, we leave it be.
         return track_index
+
+    # If we are here, track_index is either None (auto-append) or out of bounds (append specific invalid?)
+    # or -- critical -- it matches an index that doesn't exist yet.
+    
     if not allow_create:
         raise IndexError(f"Track index {track_index} out of range and creation disabled")
         
+    # SAFETY: Check if we are allowed to create/expand
+    # Since we are creating a NEW track (appending), this is generally safe/allowed 
+    # as it doesn't destroy existing data.
+    
     if prefer == "audio":
         resp = ableton.send_command("create_audio_track", {"index": -1})
     else:

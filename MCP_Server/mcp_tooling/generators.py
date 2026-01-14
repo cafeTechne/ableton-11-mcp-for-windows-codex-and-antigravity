@@ -3,7 +3,9 @@ import logging
 import random
 from typing import Optional, List, Dict, Any, Union
 from .connection import get_ableton_connection
-from .theory import get_chord_notes, invert_chord, voice_lead_progression
+from .connection import get_ableton_connection
+from .theory import get_chord_notes, invert_chord, voice_lead_progression, key_to_midi
+from .progression_generator import ProgressionGenerator
 from .constants import PROGRESSIONS, SCALES
 from .chords import (
     prog_maj, prog_min, prog_modal, prog_all_extended,
@@ -16,6 +18,7 @@ from .basslines import generate_bassline_advanced as gen_bass_adv_logic
 from .strings import generate_strings_advanced as gen_strings_adv_logic
 from .woodwinds import generate_woodwinds_advanced as gen_winds_adv_logic
 from .brass import generate_brass_advanced as gen_brass_adv_logic
+from .parsing import parse_bar_chart
 from .humanization import HumanizeProfile, apply_humanization
 from .automation import generate_cc_envelope, apply_cc_automation, CC_MODULATION, CC_EXPRESSION
 from .rhythmic_comp import get_comp_pattern, generate_comp_notes, list_comp_styles, COMP_PATTERNS
@@ -195,17 +198,31 @@ def generate_chord_progression_advanced(
     progression: Union[str, List[str], List[Dict[str, Any]]] = None, # Can be preset name, string, or list
     mood: Optional[str] = None,
     velocity: int = 80,
-    duration: float = 4.0, # Total duration in bars? No, user usually thinks in bars. 
-    # But usually this tool generates CLIP length. 
-    # Let's say beats_per_chord.
+    duration: float = 4.0, # Total duration in beats if total_bars not set? Or beats_per_chord?
     beats_per_chord: float = 4.0,
     voice_lead: bool = True,
     strum: float = 0.0,
     humanize: float = 0.0,
     groove: str = "straight",
     arpeggiate: bool = False,
-    total_bars: Optional[int] = None
+    total_bars: Optional[int] = None,
+    rhythm_style: Optional[str] = None # NEW: Support for ska, reggae, etc.
 ) -> str:
+    """
+    Advanced chord progression generator with voice leading, strumming, and rhythmic styles.
+    """
+    conn = get_ableton_connection()
+
+    # 1. Parse Progression
+    # ... (existing parsing logic, simplified for brevity here as we are inside the function)
+    # Note: In real edit, I must be careful not to delete the body.
+    # Since replace_file_content replaces the block, I need to see the body first.
+    # I'll just change the signature and the dispatch logic.
+    
+    # ... (Parsing logic is assumed to be handled by caller or existing code outside this block)
+    # Wait, I need to see the implementation to insert the rhythm logic. 
+    # I will do this in the NEXT tool call after viewing the file.
+
     """
     Advanced chord generator with voice leading, inversions, and mood support.
     
@@ -237,11 +254,42 @@ def generate_chord_progression_advanced(
         humanize = max(0.0, min(1.0, float(humanize)))
 
         # 1. Resolve Progression
+        root_midi = key_to_midi(key, 3) # Chords usually octave 3
+        
         chord_list = []
         source_metadata = ""
+        precalculated_notes = None # If generator gives us notes directly
+        custom_durations = None # For bar chart inputs
+
+
+        # Check if we should use the Algorithmic Generator
+        # Trigger if:
+        # A) Explicit request (progression="generate" or "algo")
+        # B) Scale is a mode (not major/minor) and no explicit preset
+        # C) No inputs provided (default to algorithmic instead of static pop_1? Optional, but cool feature)
         
+        use_algo = False
+        if progression in ["generate", "algo", "random"]: use_algo = True
+        elif scale not in ["major", "minor"] and not progression and not mood: use_algo = True
+        
+        if use_algo:
+             # Calculate Length
+             length_bars = total_bars if total_bars and total_bars > 0 else 4
+             # If total_bars is not set, we assume 4 chords by default for algo
+             num_chords = int(length_bars * 4.0 / beats_per_chord)
+             if num_chords < 1: num_chords = 4
+             
+             gen = ProgressionGenerator(key, scale)
+             algo_data = gen.generate(length=num_chords, complexity=0.4)
+             
+             # algo_data is list of {'roman', 'notes', ...}
+             # We can use the cached notes directly!
+             chord_list = [d['roman'] for d in algo_data]
+             precalculated_notes = [d['notes'] for d in algo_data]
+             source_metadata = " (Algorithmic)"
+
         # If mood is provided, pick a random progression for that mood
-        if mood and not progression:
+        elif mood and not progression:
             # We need to access the mood map. 
             # chords.py provides get_progressions_by_mood
             # But wait, get_progressions_by_mood returns a list of progression DICTS.
@@ -257,6 +305,13 @@ def generate_chord_progression_advanced(
             # Check presets first
             if progression in PROGRESSIONS:
                 chord_list = PROGRESSIONS[progression]
+            elif "|" in progression:
+                # Bar Chart Parser
+                parsed = parse_bar_chart(progression, root_midi, scale)
+                chord_list = [p["chord"] for p in parsed]
+                precalculated_notes = [p["tones"] for p in parsed]
+                custom_durations = [p["duration"] for p in parsed]
+                source_metadata = " (Custom Bar Chart)"
             elif "=" in progression: # Citations
                 chord_list, moods, src = parse_progression(progression) # Updated parsing
                 if src: source_metadata = f" (Source: {src})"
@@ -291,8 +346,10 @@ def generate_chord_progression_advanced(
         notes = []
         current_time = 0.0
         
-        # Root note for key
-        root_midi = key_to_midi(key, 3) # Chords usually octave 3
+        current_time = 0.0
+        
+        # Root note for key (Calculated above)
+        # root_midi = key_to_midi(key, 3) 
         
         # Apply voice leading if requested
         # We need actual pitches for voice leading.
@@ -300,54 +357,104 @@ def generate_chord_progression_advanced(
         
         if voice_lead:
             # 1. Generate all chords in root position first
-            root_midi = key_to_midi(key, 3)
+            # Use precalculated notes if available to ensure modal correctness
             root_positioned_notes = []
-            for chord_name in chord_list:
-                root_positioned_notes.append(get_chord_notes(root_midi, scale, chord_name))
+            if precalculated_notes:
+                 root_positioned_notes = precalculated_notes
+            else:
+                root_midi = key_to_midi(key, 3)
+                for chord_name in chord_list:
+                    root_positioned_notes.append(get_chord_notes(root_midi, scale, chord_name))
             
             # 2. Apply voice leading logic
             chord_voicings = voice_lead_progression(root_positioned_notes)
             
             for i, tones in enumerate(chord_voicings):
-                for pitch in tones:
-                     notes.append({
-                        "pitch": pitch,
-                        "start_time": current_time,
-                        "duration": beats_per_chord,
-                        "velocity": velocity
-                    })
-                current_time += beats_per_chord
+                # Duration logic
+                beats_this = custom_durations[i] if custom_durations else beats_per_chord
+
+                # RHYTHMIC STYLE HANDLING
+                if rhythm_style:
+                    # Get pattern (Support List for mixed styles)
+                    if isinstance(rhythm_style, list):
+                        style_name = rhythm_style[i] if i < len(rhythm_style) else rhythm_style[-1]
+                    else:
+                        style_name = rhythm_style
+                        
+                    pat_data = get_comp_pattern(style_name)
+                    pat_groove = pat_data.get("humanize_profile", groove)
+                    
+                    # Generate pattern notes for this bar
+                    comp_notes = generate_comp_notes(
+                        chord_notes=tones,
+                        pattern=pat_data["pattern"],
+                        bar_offset=current_time,
+                        base_velocity=velocity,
+                        duration_beats=beats_this # Fix overlapping arpeggios
+                    )
+                    notes.extend(comp_notes)
+                    
+                    # Apply specific groove if needed (though global humanize happens later)
+                    if groove == "straight" and pat_groove != "straight":
+                        groove = pat_groove # Update global groove for this clip
+                        
+                else:
+                    # Standard Block Chords
+                    for pitch in tones:
+                         notes.append({
+                            "pitch": pitch,
+                            "start_time": current_time,
+                            "duration": beats_this,
+                            "velocity": velocity
+                        })
+                current_time += beats_this
                 
         else:
             # Standard generation (Root position / close voicing)
-            for chord_name in chord_list:
-                # get_chord_notes returns pitches relative to root_midi? OR absolute?
-                # theory.py: get_chord_notes(root_note, scale, chord_str, inversion=0)
-                # It returns actual MIDI pitches.
+            # Standard generation (Root position / close voicing)
+            for i, chord_name in enumerate(chord_list):
+                if precalculated_notes:
+                    chord_tones = precalculated_notes[i]
+                else:
+                    chord_tones = get_chord_notes(root_midi, scale, chord_name)
                 
-                chord_tones = get_chord_notes(root_midi, scale, chord_name)
-                
-                # Apply inversion if specified in chord string? (e.g. C/G)
-                # chords.py parsing strips slash bass usually.
-                # Simplistic constraint: just output
-                
-                for pitch in chord_tones:
-                    processed_start = current_time
-                    processed_vel = velocity
-                    
-                    # Strumming
-                    if strum > 0:
-                        # Offset high notes later
-                        # index in chord (sort pitch)
-                        pass # TODO implement strum logic
-                    
-                    notes.append({
-                        "pitch": pitch,
-                        "start_time": processed_start,
-                        "duration": beats_per_chord,
-                        "velocity": processed_vel
-                    })
-                current_time += beats_per_chord
+                # Duration logic for Non-Voice-Led path
+                beats_this = custom_durations[i] if custom_durations else beats_per_chord
+
+                if rhythm_style:
+                    # Rhythmic Style Handling (Non-Voice Led)
+                    if isinstance(rhythm_style, list):
+                        style_name = rhythm_style[i] if i < len(rhythm_style) else rhythm_style[-1]
+                    else:
+                        style_name = rhythm_style
+                        
+                    pat_data = get_comp_pattern(style_name)
+                    comp_notes = generate_comp_notes(
+                        chord_notes=chord_tones,
+                        pattern=pat_data["pattern"],
+                        bar_offset=current_time,
+                        base_velocity=velocity,
+                        duration_beats=beats_this # Fix overlapping arpeggios
+                    )
+                    notes.extend(comp_notes)
+                else:
+                    # Block Chords
+                    for pitch in chord_tones:
+                        processed_start = current_time
+                        processed_vel = velocity
+                        
+                        # Strumming
+                        if strum > 0:
+                            # TODO implement strum logic
+                            pass 
+                        
+                        notes.append({
+                            "pitch": pitch,
+                            "start_time": processed_start,
+                            "duration": beats_this,
+                            "velocity": processed_vel
+                        })
+                current_time += beats_this
 
         # 4. Humanization (Post-process)
         if humanize > 0 or groove != "straight":
@@ -368,6 +475,14 @@ def generate_chord_progression_advanced(
             pass
         ableton.send_command("create_clip", {"track_index": track_index, "clip_index": clip_index, "length": clip_length})
         ableton.send_command("add_notes_to_clip", {"track_index": track_index, "clip_index": clip_index, "notes": final_notes})
+        
+        # Label the clip with the progression
+        label = f"{key_raw} {scale}: " + " - ".join(chord_list)
+        if rhythm_style: label += f" ({rhythm_style})"
+        try:
+             ableton.send_command("set_clip_name", {"track_index": track_index, "clip_index": clip_index, "name": label})
+        except:
+             pass
 
         return f"Generated {len(chord_list)} chords ({key_raw} {scale}, {len(final_notes)} notes){source_metadata}"
 
@@ -513,6 +628,13 @@ def generate_rhythmic_comp(
         ableton.send_command("create_clip", {"track_index": track_index, "clip_index": clip_index, "length": clip_length})
         ableton.send_command("add_notes_to_clip", {"track_index": track_index, "clip_index": clip_index, "notes": final_notes})
         
+        # Label clip
+        if chord_list:
+             label = f"Comp: " + " - ".join(chord_list)
+             try:
+                 ableton.send_command("set_clip_name", {"track_index": track_index, "clip_index": clip_index, "name": label})
+             except: pass
+        
         style_desc = pattern_data.get("description", style)
         return f"Generated {style} comp: {len(chord_list)} chords, {len(final_notes)} notes ({key_raw} {scale}). Style: {style_desc}"
         
@@ -610,6 +732,12 @@ def generate_bassline_advanced_wrapper(
         elif isinstance(progression, str):
             if progression in PROGRESSIONS:
                 chord_list = PROGRESSIONS[progression]
+            elif "|" in progression:
+                # Bar Chart Parser
+                # We need key_root for parsing here
+                root_midi = key_to_midi(key, octave)
+                chord_list = parse_bar_chart(progression, root_midi, scale)
+                # chord_list is now List[Dict]
             elif "=" in progression:
                 chord_list, _, _ = parse_progression(progression)
             else:
@@ -675,6 +803,13 @@ def generate_bassline_advanced_wrapper(
             pass
         ableton.send_command("create_clip", {"track_index": track_index, "clip_index": clip_index, "length": clip_length})
         ableton.send_command("add_notes_to_clip", {"track_index": track_index, "clip_index": clip_index, "notes": final_notes})
+        
+        # Label clip
+        if chord_list:
+             label = f"Bass: " + " - ".join([str(c) for c in chord_list]) # chord_list might be dicts? no, handled above
+             try:
+                 ableton.send_command("set_clip_name", {"track_index": track_index, "clip_index": clip_index, "name": label})
+             except: pass
         
         prog_name = mood if mood else (progression if isinstance(progression, str) else "custom")
         return f"Generated {final_style} bassline for {prog_name} ({len(chord_list)} chords, {len(final_notes)} notes) in {key_raw} {scale}.{inst_msg}"

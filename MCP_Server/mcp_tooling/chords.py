@@ -8,55 +8,55 @@
 # ========================================================
 
 prog_maj = [
-    "I I IM-5 IM-5 IV IV V Vsus2 =Joyful Triumphant",
-    "I I IV iii =Hopeful Nostalgic",
-    "I I7 Idom7 I7 =Relaxed Playful",
-    "I I7 Idom7 IV =Relaxed Nostalgic",
-    "I iii IV vi =Romantic Nostalgic",
-    "I iii vi Isus4 =Tender Spiritual",
-    "I iii vi IV =Romantic Hopeful",
-    "I IV ii V =Joyful Triumphant",
-    "I IV Isus2 IV =Peaceful Hopeful",
-    "I IV V IV =Joyful Triumphant",
-    "I IV V V =Joyful Excited",
-    "I IV vi V =Joyful Hopeful",
-    "I IV vii iii vi ii V I =Romantic Triumphant",
-    "I V I IV =Joyful Playful",
-    "I V IV vi =Romantic Hopeful",
-    "I V vi ii =Hopeful Romantic",
-    "I V vi iii IV I IV V =Hopeful Joyful",
-    "I V vi iii IV =Hopeful Joyful",
-    "I V vi IV =Hopeful Romantic",
-    "I V vi V =Hopeful Romantic",
-    "I vi I IV =Tender Nostalgic",
-    "I vi ii IV =Tender Nostalgic",
-    "I vi ii V =Nostalgic Romantic",
-    "I vi IV iii =Nostalgic Romantic",
-    "I vi IV V =Romantic Hopeful",
-    "I7 V7 viadd9 IV7 =Playful Joyful",
-    "ii IV V V =Hopeful",
-    "ii IV vi V =Romantic",
-    "ii V I I =Triumphant",
-    "ii V I IV =Hopeful Triumphant",
-    "ii7 Vadd9 I7 I7 =Triumphant",
-    "iii vi IV I =Romantic Nostalgic",
-    "iim7 V7 iiim7 vi7 iim7 V7 =Romantic Nostalgic",
-    "Isus2 I vi7 visus4 =Playful Romantic",
-    "IV I ii vi =Nostalgic Peaceful",
-    "IV I iii IV =Playful Joyful",
-    "IV I IV6 Iadd9 =Relaxed Joyful",
-    "IV I V vi =Joyful Romantic",
-    "IV IV I V =Joyful Hopeful",
-    "IV vi I V =Hopeful Romantic",
-    "IV vi iii I =Nostalgic Playful",
-    "IV vi IV vi =Nostalgic",
-    "V I vi V =Hopeful Romantic",
-    "V IV vi I =Hopeful Triumphant",
-    "V vi IV I =Hopeful Romantic",
-    "vi ii V I =Hopeful Romantic",
-    "vi IV I V =Hopeful Romantic",
-    "vi V IV V ii V I I =Triumphant Hopeful",
-    "vi V IV V =Romantic Hopeful",
+    "I I IM-5 IM-5 IV IV V Vsus2 =Joyful Triumphant =Pop",
+    "I I IV iii =Hopeful Nostalgic =Pop",
+    "I I7 Idom7 I7 =Relaxed Playful =Blues",
+    "I I7 Idom7 IV =Relaxed Nostalgic =Blues",
+    "I iii IV vi =Romantic Nostalgic =Pop",
+    "I iii vi Isus4 =Tender Spiritual =Pop Ballad",
+    "I iii vi IV =Romantic Hopeful =Pop",
+    "I IV ii V =Joyful Triumphant =Pop Rock",
+    "I IV Isus2 IV =Peaceful Hopeful =Pop",
+    "I IV V IV =Joyful Triumphant =Rock",
+    "I IV V V =Joyful Excited =Rock",
+    "I IV vi V =Joyful Hopeful =Pop",
+    "I IV vii iii vi ii V I =Romantic Triumphant =Pop Ballad",
+    "I V I IV =Joyful Playful =Pop Rock",
+    "I V IV vi =Romantic Hopeful =Pop",
+    "I V vi ii =Hopeful Romantic =Pop",
+    "I V vi iii IV I IV V =Hopeful Joyful =Pop",
+    "I V vi iii IV =Hopeful Joyful =Pop",
+    "I V vi IV =Hopeful Romantic =Pop",
+    "I V vi V =Hopeful Romantic =Pop",
+    "I vi I IV =Tender Nostalgic =Pop",
+    "I vi ii IV =Tender Nostalgic =Pop",
+    "I vi ii V =Nostalgic Romantic =Pop",
+    "I vi IV iii =Nostalgic Romantic =Pop",
+    "I vi IV V =Romantic Hopeful =Pop",
+    "I7 V7 viadd9 IV7 =Playful Joyful =Pop Funk",
+    "ii IV V V =Hopeful =Pop",
+    "ii IV vi V =Romantic =Pop",
+    "ii V I I =Triumphant =Jazz",
+    "ii V I IV =Hopeful Triumphant =Pop",
+    "ii7 Vadd9 I7 I7 =Triumphant =Jazz",
+    "iii vi IV I =Romantic Nostalgic =Pop",
+    "iim7 V7 iiim7 vi7 iim7 V7 =Romantic Nostalgic =Jazz",
+    "Isus2 I vi7 visus4 =Playful Romantic =Pop",
+    "IV I ii vi =Nostalgic Peaceful =Pop",
+    "IV I iii IV =Playful Joyful =Pop",
+    "IV I IV6 Iadd9 =Relaxed Joyful =Pop",
+    "IV I V vi =Joyful Romantic =Pop",
+    "IV IV I V =Joyful Hopeful =Rock",
+    "IV vi I V =Hopeful Romantic =Pop",
+    "IV vi iii I =Nostalgic Playful =Pop",
+    "IV vi IV vi =Nostalgic =Pop",
+    "V I vi V =Hopeful Romantic =Pop",
+    "V IV vi I =Hopeful Triumphant =Pop",
+    "V vi IV I =Hopeful Romantic =Pop",
+    "vi ii V I =Hopeful Romantic =Pop",
+    "vi IV I V =Hopeful Romantic =Pop",
+    "vi V IV V ii V I I =Triumphant Hopeful =Pop",
+    "vi V IV V =Romantic Hopeful =Pop",
 ]
 
 prog_min = [
@@ -402,6 +402,49 @@ prog_metal = [
     "i bII III ivm =Prog-Metal Exotic @CreativeGuitarStudio:ProgMetal",
 ]
 
+# CINEMATIC / EPIC PROGRESSIONS
+# Sources: PianoWithJonny, Composer Focus, Spitfire Audio, Evenant
+prog_cinematic = [
+    # Hans Zimmer / Inception style (Dorian motion)
+    "im vm VII IV =Cinematic Heroic @FilipeLeitao:Inception",
+    "im bVI bIII bVII =Cinematic Epic @ComposerFocus:HansZimmer", # "Time" variation
+    
+    # Chromatic Mediants (Fantasy/Sci-Fi)
+    "I bIII =Cinematic Fantasy @PianoWithJonny:Cinematic",
+    "I bVI =Cinematic Wonder @PianoWithJonny:Cinematic",
+    "im bviim =Cinematic Mystery @PianoWithJonny:Cinematic",
+    
+    # Epic / Trailer
+    "i bVI bVII i =Cinematic Gladiator @FilipeLeitao:Gladiator",
+    "im bVI bIII bVII =Cinematic Emotional @Landr:Interstellar",
+    "i IV V i III VI i V V i =Cinematic SpaceOpera @Landr:StarWars", # Force Theme
+    
+    # Emotional / Poignant
+    "vi IV I V =Cinematic Emotional @eMastered:Epic",
+    "I iv I iv II vi i VI iv V =Cinematic Bittersweet @eMastered:LeiasTheme",
+    "im VI v i VI III im =Cinematic Pirate @Landr:Pirates",
+]
+
+# LO-FI HIP HOP PROGRESSIONS
+# Sources: Produce Like A Pro, LoFi Weekly, Unison Audio
+prog_lofi = [
+    # Jazz-influenced extensions
+    "IM7 vim7 iim7 V7 =Lo-Fi Chill @RichardPryn:LofiChords",
+    "IM9 vim9 iim9 V13 =Lo-Fi Jazzy @RichardPryn:LofiChords",
+    "IM7 IVM7 =Lo-Fi Nostalgic @Unison:LofiProgressions",
+    
+    # Minor moods
+    "im7 ivm7 =Lo-Fi Mellow @LoFiWeekly:Chords",
+    "im9 ivm7 vm7 =Lo-Fi Night @LoFiWeekly:Chords",
+    "im11 bVIIM11 bVIM11 vm11 =Lo-Fi Sad @YouTube:LofiTheory", # Descending minor 11s
+    
+    # Modal interchange
+    "IM7 vim7 bVI7 V7 =Lo-Fi Dreamy @LoFiWeekly:Chords",
+    "iim7 V7 IM7 ivm7 =Lo-Fi Sentimental @Unison:LofiProgressions",
+    "IM9 G7#5 im11 IVM9 =Lo-Fi Complex @Unison:LofiProgressions",
+    "im11 bIIm11 =Lo-Fi Parallel @YouTube:LofiTheory",
+]
+
 # Combine all progressions
 prog_all_extended = {
     'major': prog_maj,
@@ -420,6 +463,8 @@ prog_all_extended = {
     'rnb_neosoul': prog_rnb_neosoul,
     'edm': prog_edm,
     'metal': prog_metal,
+    'cinematic': prog_cinematic,
+    'lofi': prog_lofi,
 }
 
 # SOURCES/CITATIONS
@@ -435,6 +480,9 @@ SOURCES = {
     '@FreeJazzLessons:Turnarounds': 'Free Jazz Lessons - 4 Jazz Turnarounds (2023)',
     '@LearnJazzStandards:AutumnLeaves': 'Learn Jazz Standards - Autumn Leaves Chords (Aug 2024)',
     '@JazzVideoLessons:AutumnLeaves': 'Jazz Video Lessons - Autumn Leaves Guide (Nov 2025)',
+    '@RichardPryn:LofiChords': 'Richard Pryn - Lofi Chords Theory (2024)',
+    '@LoFiWeekly:Chords': 'LoFi Weekly - Chord Progressions Guide',
+    '@YouTube:LofiTheory': 'YouTube - Lofi Hip Hop Music Theory',
     
     # Blues sources
     '@LANDR:MinorBlues': 'LANDR Blog - 12 Bar Blues Explained (2025)',
@@ -508,13 +556,20 @@ SOURCES = {
     '@MetalMastermind:Theory': 'Metal Mastermind - Metal Music Theory For Beginners (Jan 2025)',
     '@FundamentalChanges:Phrygian': 'Fundamental Changes - The Phrygian Mode for Guitar (May 2018)',
     '@CreativeGuitarStudio:ProgMetal': 'Creative Guitar Studio - Progressive Metal Riff Building',
+
+    # Cinematic
+    '@FilipeLeitao:Inception': 'Filipe Leitao - Decoding Inception Score',
+    '@ComposerFocus:HansZimmer': 'Composer Focus - Hans Zimmer Techniques',
+    '@PianoWithJonny:Cinematic': 'Piano With Jonny - 3 Cinematic Chord Progressions',
+    '@FilipeLeitao:Gladiator': 'Filipe Leitao - Gladiator Analysis',
+    '@Landr:Interstellar': 'LANDR - Interstellar Chords',
+    '@Landr:StarWars': 'LANDR - John Williams Style',
+    '@eMastered:Epic': 'eMastered - Epic Chord Progressions',
+    '@eMastered:LeiasTheme': 'eMastered - Film Score Progressions',
+    '@Landr:Pirates': 'LANDR - Hans Zimmer Style',
 }
 
-# Rick Beato context (his work focuses on song analysis, not cataloging progressions)
-# From research: Beato teaches music theory concepts (modes, secondary dominants, 
-# chord scales, cadences, etc.) but doesn't maintain a progression database. 
-# His "Beato Book" covers theory fundamentals, and his YouTube channel analyzes 
-# specific songs. See: OZY interview (Nov 2019), Sean Carroll podcast (Aug 2022)
+# Rick Beato context ... (unchanged)
 
 # GENRE/MOOD TAGS (expanded)
 GENRES = [
@@ -522,7 +577,7 @@ GENRES = [
     "Doo-wop", "Rock-n-Roll", "Classical", "Gospel", "Bossa-Nova",
     "Country", "Country-Blues", "Reggae", "Ska", "Neo-Soul", "R&B",
     "EDM", "House", "Techno", "Trance", "Deep-House", "Prog-Metal",
-    "Djent"
+    "Djent", "Cinematic", "Lo-Fi", "Pop Rock", "Pop Ballad", "Pop Funk"
 ]
 
 MOODS = [
@@ -536,7 +591,8 @@ MOODS = [
     "Bluesy", "Elegant", "Laid-back", "Groovy", "Mellow",
     "Bright", "Bouncy", "Hypnotic", "Jazzy", "Complex",
     "Flowing", "Meditative", "Euphoric", "Intense", "Epic",
-    "Aggressive", "Heavy", "Angular", "Exotic", "Dissonant"
+    "Aggressive", "Heavy", "Angular", "Exotic", "Dissonant",
+    "Heroic", "Wonder", "Mystery", "Bittersweet", "Chill", "Sentimental"
 ]
 
 # Keep original chord type definitions

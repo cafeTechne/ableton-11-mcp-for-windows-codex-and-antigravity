@@ -1,0 +1,4684 @@
+{
+  "tempo": 150.0,
+  "time_signature": "4/4",
+  "playing": false,
+  "track_count": 42,
+  "scene_count": 16,
+  "tracks": [
+    {
+      "index": 0,
+      "name": "Chords",
+      "type": "audio",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Compressor",
+          "class_name": "Compressor2"
+        },
+        {
+          "index": 1,
+          "name": "Saturator",
+          "class_name": "Saturator"
+        },
+        {
+          "index": 2,
+          "name": "Auto Filter",
+          "class_name": "AutoFilter"
+        },
+        {
+          "index": 3,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": false
+    },
+    {
+      "index": 1,
+      "name": "2-Square Sweep",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Square Sweep",
+          "class_name": "Operator"
+        },
+        {
+          "index": 1,
+          "name": "Redux",
+          "class_name": "Redux2"
+        },
+        {
+          "index": 2,
+          "name": "Saturator",
+          "class_name": "Saturator"
+        },
+        {
+          "index": 3,
+          "name": "Compressor",
+          "class_name": "Compressor2"
+        },
+        {
+          "index": 4,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 5,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 6,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 7,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 1,
+          "name": "I IV v bVII",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 3,
+          "name": "Heroic (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 6,
+          "name": "Action (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "I IV bVII IV I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "v IV bVII I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 13,
+          "name": "Action (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": true,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "YMCK Square",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Magical8bitPlug2",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 1,
+          "name": "Compressor",
+          "class_name": "Compressor2"
+        },
+        {
+          "index": 2,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 3,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 4,
+          "name": "Auto Filter",
+          "class_name": "AutoFilter"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 0,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 1,
+          "name": "I IV v bVII",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 3,
+          "name": "Heroic (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 4,
+          "name": "I ii v I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 5,
+          "name": "I ii v I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 6,
+          "name": "Action (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "I IV bVII IV I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 9,
+          "name": "Power (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "v IV bVII I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 13,
+          "name": "Action (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": true,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 15,
+          "name": "Triumph (F# mixolydian)",
+          "length": 20.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": false,
+          "loop_start": 0.0,
+          "loop_end": 20.0,
+          "start_marker": 0.0,
+          "end_marker": 20.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Phasesynth (1bs)",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "1bs_phasesynth_x64",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 1,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 2,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 0,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 1,
+          "name": "I IV v bVII",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 3,
+          "name": "Heroic (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 4,
+          "name": "I ii v I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "I IV bVII IV I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 9,
+          "name": "Power (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "v IV bVII I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": true,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 15,
+          "name": "Triumph (F# mixolydian)",
+          "length": 36.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": false,
+          "loop_start": 0.0,
+          "loop_end": 36.0,
+          "start_marker": 0.0,
+          "end_marker": 20.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Arpeggiator",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Arpeggiator",
+          "class_name": "MidiArpeggiator"
+        },
+        {
+          "index": 1,
+          "name": "Magical8bitPlug2",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 2,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 1,
+          "name": "I IV v bVII",
+          "length": 64.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 2,
+          "name": "I IV v bVII",
+          "length": 64.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 3,
+          "name": "Heroic (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 5,
+          "name": "I ii v I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 6,
+          "name": "Heroic (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 8,
+          "name": "I IV bVII IV I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 9,
+          "name": "Power (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 13,
+          "name": "Heroic (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Arpeggiator",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Arpeggiator",
+          "class_name": "MidiArpeggiator"
+        },
+        {
+          "index": 1,
+          "name": "Magical8bitPlug2",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 2,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 3,
+          "name": "Auto Filter",
+          "class_name": "AutoFilter"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 4,
+          "name": "I ii v I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "I IV bVII IV I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 9,
+          "name": "Power (F# mixolydian)",
+          "length": 16.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "v IV bVII I",
+          "length": 64.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 12,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": false,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": true,
+          "color": 4047616,
+          "color_index": 19,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "7-Chip Monk",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Chip Monk",
+          "class_name": "InstrumentVector"
+        },
+        {
+          "index": 1,
+          "name": "Chiptune Filter",
+          "class_name": "Redux2"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "v IV bVII I",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "I bVII IV I",
+          "length": 64.0,
+          "playing": true,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 15,
+          "name": "Triumph (F# mixolydian)",
+          "length": 40.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": false,
+          "loop_start": 0.0,
+          "loop_end": 40.0,
+          "start_marker": 0.0,
+          "end_marker": 20.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Bass",
+      "type": "audio",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 1,
+          "name": "Compressor",
+          "class_name": "Compressor2"
+        },
+        {
+          "index": 2,
+          "name": "Compressor",
+          "class_name": "Compressor2"
+        }
+      ],
+      "has_clips": false
+    },
+    {
+      "index": 8,
+      "name": "9-Fine Pulse Bass",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Fine Pulse Bass",
+          "class_name": "MultiSampler"
+        },
+        {
+          "index": 1,
+          "name": "Compressor",
+          "class_name": "Compressor2"
+        },
+        {
+          "index": 2,
+          "name": "Auto Filter",
+          "class_name": "AutoFilter"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 0,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 1,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 8,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "",
+          "length": 64.0,
+          "playing": true,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "10-101 Bass Sidechain Fuzz",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "101 Bass Sidechain Fuzz",
+          "class_name": "InstrumentGroupDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 7,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "YMCK Triangle",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Magical8bitPlug2",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 1,
+          "name": "Auto Filter",
+          "class_name": "AutoFilter"
+        },
+        {
+          "index": 2,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 0,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 1,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 2,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "",
+          "length": 64.0,
+          "playing": true,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Arpeggiator",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Arpeggiator",
+          "class_name": "MidiArpeggiator"
+        },
+        {
+          "index": 1,
+          "name": "Magical8bitPlug2",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 2,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 3,
+          "name": "Auto Filter",
+          "class_name": "AutoFilter"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 4,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 8,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 12,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "",
+          "length": 64.0,
+          "playing": true,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Arpeggiator",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Arpeggiator",
+          "class_name": "MidiArpeggiator"
+        },
+        {
+          "index": 1,
+          "name": "Magical8bitPlug2",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 2,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 3,
+          "name": "Auto Filter",
+          "class_name": "AutoFilter"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 0,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 1,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 2,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 5,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 12,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Drums",
+      "type": "audio",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 1,
+          "name": "Glue Compressor",
+          "class_name": "GlueCompressor"
+        },
+        {
+          "index": 2,
+          "name": "Drum Buss",
+          "class_name": "DrumBuss"
+        }
+      ],
+      "has_clips": false
+    },
+    {
+      "index": 14,
+      "name": "15-Kick Loop RK 4 128bpm",
+      "type": "audio",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Redux",
+          "class_name": "Redux2"
+        },
+        {
+          "index": 1,
+          "name": "Saturator",
+          "class_name": "Saturator"
+        },
+        {
+          "index": 2,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 3,
+          "name": "Auto Filter",
+          "class_name": "AutoFilter"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 2,
+          "name": "Kick Loop RK 4 128bpm",
+          "length": 8.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 8.0,
+          "start_marker": 0.0,
+          "end_marker": 8.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": false,
+          "is_audio_clip": true,
+          "warping": true,
+          "warp_mode": 0,
+          "pitch_coarse": 8,
+          "pitch_fine": 0.0,
+          "gain": 0.4000000059604645
+        },
+        {
+          "slot": 3,
+          "name": "Kick Loop RK 4 128bpm",
+          "length": 8.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 8.0,
+          "start_marker": 0.0,
+          "end_marker": 8.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": false,
+          "is_audio_clip": true,
+          "warping": true,
+          "warp_mode": 0,
+          "pitch_coarse": 8,
+          "pitch_fine": 0.0,
+          "gain": 0.4000000059604645
+        },
+        {
+          "slot": 4,
+          "name": "Kick Loop RK 4 128bpm",
+          "length": 8.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 8.0,
+          "start_marker": 0.0,
+          "end_marker": 8.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": false,
+          "is_audio_clip": true,
+          "warping": true,
+          "warp_mode": 0,
+          "pitch_coarse": 8,
+          "pitch_fine": 0.0,
+          "gain": 0.2984375059604645
+        },
+        {
+          "slot": 5,
+          "name": "Kick Loop RK 4 128bpm",
+          "length": 8.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 8.0,
+          "start_marker": 0.0,
+          "end_marker": 8.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": false,
+          "is_audio_clip": true,
+          "warping": true,
+          "warp_mode": 0,
+          "pitch_coarse": 8,
+          "pitch_fine": 0.0,
+          "gain": 0.2984375059604645
+        },
+        {
+          "slot": 7,
+          "name": "Kick Loop RK 4 128bpm",
+          "length": 8.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 8.0,
+          "start_marker": 0.0,
+          "end_marker": 8.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": false,
+          "is_audio_clip": true,
+          "warping": true,
+          "warp_mode": 0,
+          "pitch_coarse": 8,
+          "pitch_fine": 0.0,
+          "gain": 0.24687500298023224
+        },
+        {
+          "slot": 8,
+          "name": "Kick Loop RK 4 128bpm",
+          "length": 8.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 8.0,
+          "start_marker": 0.0,
+          "end_marker": 8.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": false,
+          "is_audio_clip": true,
+          "warping": true,
+          "warp_mode": 0,
+          "pitch_coarse": 8,
+          "pitch_fine": 0.0,
+          "gain": 0.24687500298023224
+        },
+        {
+          "slot": 11,
+          "name": "Kick Loop RK 4 128bpm",
+          "length": 8.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 8.0,
+          "start_marker": 0.0,
+          "end_marker": 8.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": false,
+          "is_audio_clip": true,
+          "warping": true,
+          "warp_mode": 0,
+          "pitch_coarse": 8,
+          "pitch_fine": 0.0,
+          "gain": 0.4000000059604645
+        },
+        {
+          "slot": 12,
+          "name": "Kick Loop RK 4 128bpm",
+          "length": 8.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 8.0,
+          "start_marker": 0.0,
+          "end_marker": 8.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": false,
+          "is_audio_clip": true,
+          "warping": true,
+          "warp_mode": 0,
+          "pitch_coarse": 8,
+          "pitch_fine": 0.0,
+          "gain": 0.4000000059604645
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Rock Drums",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "606 Core Kit",
+          "class_name": "DrumGroupDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 0,
+          "name": "Punk Drive",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 1,
+          "name": "Punk Fast",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 4,
+          "name": "Chiptune Drive",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "16th Energy",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "Half-Time",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "Punk Drive",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Clickydrums (1bs)",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "1bs_clickydrums_x64",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 0,
+          "name": "Punk Drive",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 1,
+          "name": "Punk Fast",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "16th Energy",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "Half-Time",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "Punk Drive",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Noisedrums (1bs)",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "1bs_noisedrums_x64",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 1,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 0,
+          "name": "Punk Drive",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 1,
+          "name": "Punk Fast",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 4,
+          "name": "Chiptune Drive",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "16th Energy",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "Half-Time",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "Punk Drive",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "Build Up",
+          "length": 16.0,
+          "playing": true,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Tapedrums (1bs)",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "1bs_tapedrums_x64",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 1,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 0,
+          "name": "Punk Drive",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 1,
+          "name": "Punk Fast",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 2,
+          "name": "Punk Fast",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "16th Energy",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "Half-Time",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "Punk Drive",
+          "length": 16.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Strings",
+      "type": "audio",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 1,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": false
+    },
+    {
+      "index": 20,
+      "name": "Orchestral Strings",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Strings Ensemble Pizzicato",
+          "class_name": "InstrumentGroupDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 15029152,
+          "color_index": 12,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "name": "Jazz Strings",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Strings Ensemble",
+          "class_name": "InstrumentGroupDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 8940772,
+          "color_index": 24,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "name": "Pop Strings",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Magnetic Strings",
+          "class_name": "InstrumentGroupDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9611263,
+          "color_index": 10,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "name": "Rock Strings",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Strings Ensemble Pizzicato",
+          "class_name": "InstrumentGroupDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "name": "Reggae Strings",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Strings Ensemble Staccato",
+          "class_name": "InstrumentGroupDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 9160191,
+          "color_index": 8,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "name": "Brass",
+      "type": "audio",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 1,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": false
+    },
+    {
+      "index": 26,
+      "name": "Pop Brass",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "C Tuba Solo Staccato",
+          "class_name": "InstrumentGroupDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 16249980,
+          "color_index": 3,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "name": "Ska Brass",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Trombone Section Staccato",
+          "class_name": "InstrumentGroupDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 16753961,
+          "color_index": 1,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "name": "Funk Brass",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Trombone Section Staccato",
+          "class_name": "InstrumentGroupDevice"
+        },
+        {
+          "index": 1,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 16149507,
+          "color_index": 15,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "name": "Classical Brass",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "C Tuba Solo",
+          "class_name": "InstrumentGroupDevice"
+        },
+        {
+          "index": 1,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 16749734,
+          "color_index": 0,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "",
+          "length": 64.0,
+          "playing": true,
+          "color": 16749734,
+          "color_index": 0,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "name": "Woodwinds",
+      "type": "audio",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 1,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": false
+    },
+    {
+      "index": 31,
+      "name": "Pop Woodwinds",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Alto Flute Solo Legato",
+          "class_name": "InstrumentGroupDevice"
+        },
+        {
+          "index": 1,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "",
+          "length": 64.0,
+          "playing": true,
+          "color": 16726484,
+          "color_index": 26,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "name": "Classical Woodwinds",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Woodwinds Ensemble",
+          "class_name": "InstrumentGroupDevice"
+        },
+        {
+          "index": 1,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 16725558,
+          "color_index": 14,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 14,
+          "name": "",
+          "length": 64.0,
+          "playing": true,
+          "color": 16725558,
+          "color_index": 14,
+          "is_playing": true,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "name": "Jazz Woodwinds",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Woodwinds Ensemble Staccato",
+          "class_name": "InstrumentGroupDevice"
+        },
+        {
+          "index": 1,
+          "name": "Ozone Imager",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 10,
+          "name": "",
+          "length": 64.0,
+          "playing": false,
+          "color": 15029152,
+          "color_index": 12,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 64.0,
+          "start_marker": 0.0,
+          "end_marker": 64.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "name": "Melody",
+      "type": "audio",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        },
+        {
+          "index": 1,
+          "name": "Saturator",
+          "class_name": "Saturator"
+        },
+        {
+          "index": 2,
+          "name": "Auto Filter",
+          "class_name": "AutoFilter"
+        }
+      ],
+      "has_clips": false
+    },
+    {
+      "index": 35,
+      "name": "furioso_chip",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Kingston",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 7,
+          "name": "",
+          "length": 60.0,
+          "playing": false,
+          "color": 9611263,
+          "color_index": 10,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 60.0,
+          "start_marker": 0.0,
+          "end_marker": 60.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 9,
+          "name": "",
+          "length": 16.0,
+          "playing": false,
+          "color": 9611263,
+          "color_index": 10,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "",
+          "length": 52.0,
+          "playing": false,
+          "color": 9611263,
+          "color_index": 10,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 52.0,
+          "start_marker": 0.0,
+          "end_marker": 52.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "name": "_allegro_chip_1",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Kingston",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 3,
+          "name": "",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "",
+          "length": 60.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 60.0,
+          "start_marker": 0.0,
+          "end_marker": 60.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 9,
+          "name": "",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "",
+          "length": 48.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 48.0,
+          "start_marker": 0.0,
+          "end_marker": 48.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "",
+          "length": 52.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 52.0,
+          "start_marker": 0.0,
+          "end_marker": 52.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "name": "allegro_chip",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Kingston",
+          "class_name": "PluginDevice"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 6,
+          "name": "",
+          "length": 16.0,
+          "playing": false,
+          "color": 1698303,
+          "color_index": 21,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "name": "Arpeggiator",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Arpeggiator",
+          "class_name": "MidiArpeggiator"
+        },
+        {
+          "index": 1,
+          "name": "Magical8bitPlug2",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 2,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 8,
+          "name": "",
+          "length": 60.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 60.0,
+          "start_marker": 0.0,
+          "end_marker": 60.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "",
+          "length": 52.0,
+          "playing": false,
+          "color": 9611263,
+          "color_index": 10,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 52.0,
+          "start_marker": 0.0,
+          "end_marker": 52.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 12,
+          "name": "",
+          "length": 52.0,
+          "playing": false,
+          "color": 9611263,
+          "color_index": 10,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 52.0,
+          "start_marker": 0.0,
+          "end_marker": 52.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "name": "Arpeggiator",
+      "type": "midi",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [
+        {
+          "index": 0,
+          "name": "Arpeggiator",
+          "class_name": "MidiArpeggiator"
+        },
+        {
+          "index": 1,
+          "name": "Magical8bitPlug2",
+          "class_name": "PluginDevice"
+        },
+        {
+          "index": 2,
+          "name": "EQ Eight",
+          "class_name": "Eq8"
+        }
+      ],
+      "has_clips": true,
+      "clips": [
+        {
+          "slot": 3,
+          "name": "",
+          "length": 16.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 5,
+          "name": "",
+          "length": 16.0,
+          "playing": false,
+          "color": 1698303,
+          "color_index": 21,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 6,
+          "name": "",
+          "length": 16.0,
+          "playing": false,
+          "color": 1698303,
+          "color_index": 21,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 7,
+          "name": "",
+          "length": 60.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 60.0,
+          "start_marker": 0.0,
+          "end_marker": 60.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 9,
+          "name": "",
+          "length": 16.0,
+          "playing": false,
+          "color": 9611263,
+          "color_index": 10,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 16.0,
+          "start_marker": 0.0,
+          "end_marker": 16.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 10,
+          "name": "",
+          "length": 48.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 48.0,
+          "start_marker": 0.0,
+          "end_marker": 48.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 11,
+          "name": "",
+          "length": 52.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 52.0,
+          "start_marker": 0.0,
+          "end_marker": 52.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        },
+        {
+          "slot": 12,
+          "name": "",
+          "length": 52.0,
+          "playing": false,
+          "color": 11958214,
+          "color_index": 25,
+          "is_playing": false,
+          "is_triggered": false,
+          "is_recording": false,
+          "looping": true,
+          "loop_start": 0.0,
+          "loop_end": 52.0,
+          "start_marker": 0.0,
+          "end_marker": 52.0,
+          "launch_mode": 0,
+          "launch_quantization": 0,
+          "legato": false,
+          "is_midi_clip": true,
+          "is_audio_clip": false,
+          "time_signature": {
+            "numerator": 4,
+            "denominator": 4
+          }
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "name": "FX Bus",
+      "type": "audio",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [],
+      "has_clips": false
+    },
+    {
+      "index": 41,
+      "name": "42-Audio",
+      "type": "audio",
+      "armed": false,
+      "muted": false,
+      "soloed": false,
+      "devices": [],
+      "has_clips": false
+    }
+  ],
+  "scenes": [
+    {
+      "index": 0,
+      "name": "Theme"
+    },
+    {
+      "index": 1,
+      "name": "Dance 1"
+    },
+    {
+      "index": 2,
+      "name": "Tx 1"
+    },
+    {
+      "index": 3,
+      "name": "Release 1"
+    },
+    {
+      "index": 4,
+      "name": "Dance 2"
+    },
+    {
+      "index": 5,
+      "name": "Tx 2"
+    },
+    {
+      "index": 6,
+      "name": "Release 2"
+    },
+    {
+      "index": 7,
+      "name": "Dance 3 (Long)"
+    },
+    {
+      "index": 8,
+      "name": "Tx 3"
+    },
+    {
+      "index": 9,
+      "name": "Release 3"
+    },
+    {
+      "index": 10,
+      "name": "Tension"
+    },
+    {
+      "index": 11,
+      "name": "Theme"
+    },
+    {
+      "index": 12,
+      "name": "Tx 4"
+    },
+    {
+      "index": 13,
+      "name": "Release 2"
+    },
+    {
+      "index": 14,
+      "name": "Outro"
+    },
+    {
+      "index": 15,
+      "name": ""
+    }
+  ]
+}
