@@ -75,6 +75,13 @@ MOOD_PROFILES = {
         "rest": 0.1, "sustain": 0.9, "prefer_long": 0.5, "contour": "ascending", "tension": 0.3
     },
 
+    # 🎺 SKA / HORNS
+    "horn_section": {
+        "density": 0.35, "durations": [0.5, 1.0], "velocity": (100, 120), "leap": 0.3,
+        "rest": 0.4, "sustain": 0.6, "prefer_long": 0.0, "contour": "static", "tension": 0.3,
+        "motif_chance": 0.8, "staccato": True
+    },
+
     # ⚙️ DRIVING / MECHANICAL / RELENTLESS
     "ostinato": {
         "density": 0.95, "durations": [0.5], "velocity": (85, 100), "leap": 0.0, 
@@ -135,6 +142,14 @@ MOOD_PROFILES = {
         "density": 0.6, "durations": [1.0, 0.5, 2.0], "velocity": (80, 110),
         "leap": 0.3, "rest": 0.1, "sustain": 0.9, "prefer_long": 0.5,
         "motif_chance": 0.4, "contour": "ascending", "tension": 0.3
+    },
+    
+    # 🤪 CHAOTIC / WILD SKA
+    "ska_chaos": {
+        "density": 0.6, "durations": [0.25, 0.5, 0.25], "velocity": (90, 127),
+        "leap": 0.6, "rest": 0.1, "sustain": 0.4, "prefer_long": 0.0,
+        "motif_chance": 0.15, "contour": "wave", "tension": 0.7, 
+        "staccato": True
     },
     "pastorale": {  # Peaceful/Nature
         "density": 0.5, "durations": [0.5, 1.0], "velocity": (60, 80),

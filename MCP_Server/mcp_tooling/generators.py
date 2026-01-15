@@ -650,7 +650,8 @@ def generate_bassline(
     scale: str = "major",
     genre_progression: str = "pop_1",
     style: str = "walking",
-    instrument_name: Optional[str] = None
+    instrument_name: Optional[str] = None,
+    seed: Optional[int] = None
 ) -> str:
     """
     Simple bassline generator using preset progressions.
@@ -680,7 +681,8 @@ def generate_bassline(
         octave=2,
         humanize=0.0,
         groove="straight",
-        instrument_name=instrument_name
+        instrument_name=instrument_name,
+        seed=seed
     )
 
 
@@ -699,7 +701,8 @@ def generate_bassline_advanced_wrapper(
     octave: int = 2,
     humanize: float = 0.0,
     groove: str = "straight",
-    instrument_name: Optional[str] = None
+    instrument_name: Optional[str] = None,
+    seed: Optional[int] = None
 ) -> str:
     """
     Advanced bassline generator using theory-based rules.
@@ -784,7 +787,8 @@ def generate_bassline_advanced_wrapper(
             total_bars=total_bars,
             style=final_style,
             velocity=velocity,
-            octave=octave
+            octave=octave,
+            seed=seed
         )
         
         # Send to Ableton

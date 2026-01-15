@@ -479,11 +479,20 @@ def _gen_jazz_walking(
     beat_plan[0] = t1
 
     # Beat 3: guide-tone structure (prefer 3rd/7th 80/20)
+    # CHORD TONE FIDELITY: Only target 7th if chord has 4+ tones (extensions)
     if beats >= 3:
-        guide_choices = [third_pc, seventh_pc, third_pc, seventh_pc, fifth_pc]  # 80/20-ish
+        has_seventh = len(chord_pcs) >= 4 or "7" in chord_quality or "maj" in chord_quality
+        
+        if has_seventh:
+            guide_choices = [third_pc, seventh_pc, third_pc, seventh_pc, fifth_pc]  # 80/20-ish mixed
+        else:
+            guide_choices = [third_pc, fifth_pc, third_pc, root_pc, fifth_pc] # Triad focus
+            
         target_pc = random.choice(guide_choices)
         
-        # Sanitizer: Beat 3 target must be in scale for strict mode
+        # Sanitizer: Beat 3 target must be in scale for strict mode (if we picked a chord tone outside scale?)
+        # But if we picked from chord tones, they might be outside scale (borrowed chord). 
+        # In modal_strict, we must snap.
         if modal_strict and global_scale_pcs and (target_pc not in global_scale_pcs):
              target_pc = min(global_scale_pcs, key=lambda p: pc_distance(p, target_pc))
              
@@ -1137,12 +1146,16 @@ def generate_bassline_from_progression(
     style: str = "walking", # "jazz", "rock", "funk", "reggae", "country"
     velocity: int = 100,
     octave: int = DEFAULT_BASS_OCTAVE,
-    total_bars: Optional[int] = None
+    total_bars: Optional[int] = None,
+    seed: int = None
 ) -> tuple: # (notes, length)
     """
     Generate complete bassline.
     style maps to genre-specific generators.
     """
+    if seed is not None:
+        random.seed(seed)
+
     root_midi = key_to_midi(key, octave)
     all_notes = []
     
@@ -1191,6 +1204,24 @@ def generate_bassline_from_progression(
              if leading_tone not in global_scale_pcs:
                  global_scale_pcs.append(leading_tone)
     
+    # "Original Mixolydian" / Strict Diatonic Mode Logic
+    # If style is 'walking_mixolydian', we force modal_strict using the project's key/scale.
+    # This ensures "Chord Tone Fidelity" (1-13 extensions within diatonic scale) and avoids chromaticism.
+    force_modal_strict = False
+    if style == "walking_mixolydian":
+        style = "walking" # Use standard walking generator
+        force_modal_strict = True
+        if global_scale_pcs is None:
+             # Force creation if not already done (e.g. Major/Minor keys)
+             global_scale_pcs = [n % 12 for n in mode_obj.get_scale_notes()]
+    
+    # "Ska Strict" - Non-Chromatic Ska Bass
+    if style == "ska_strict":
+        style = "ska"
+        force_modal_strict = True
+        if global_scale_pcs is None:
+             global_scale_pcs = [n % 12 for n in mode_obj.get_scale_notes()]
+             
     last_pitch = None
     last_direction = 0 # 1 (Up), -1 (Down), 0 (Static)
     
@@ -1239,7 +1270,7 @@ def generate_bassline_from_progression(
                 scale_obj=mode_obj,
                 previous_pitch=last_pitch,
                 chord_quality=chord_quality,
-                global_scale_pcs=global_scale_pcs  # NEW: pass modal context
+                global_scale_pcs=global_scale_pcs if (global_scale_pcs and (scale.lower() not in ("major", "minor") or force_modal_strict)) else None  # Pass global_scale for strict mode
             )
         elif style == "ska":
             notes = _gen_ska_bass(
